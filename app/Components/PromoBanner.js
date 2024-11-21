@@ -1,8 +1,8 @@
 import Image from "next/image";
 
 const PromoBanner = () => {
-    return <div>
-        <div className="bg-purple-50 flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-10 md:py-16">
+    return <div className=" bg-purple-50">
+        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-10 md:py-16">
             {/* Text Section */}
             <div className="text-center md:text-left space-y-4">
                 <h2 className="text-xl md:text-2xl lg:text-4xl font-bold text-purple-700">

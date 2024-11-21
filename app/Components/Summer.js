@@ -5,7 +5,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-const NewArrivals = () => {
+const Summer = () => {
     const products = [
         { id: 1, name: "Indian Sharee", price: "BDT 2,300", img: "/sharee.jpg" },
         { id: 2, name: "Hoodie", price: "BDT 2,900", img: "/Hoodie.jpg" },
@@ -23,7 +23,7 @@ const NewArrivals = () => {
     ];
 
     const [startIndex, setStartIndex] = useState(0);
-    const itemsPerPage = 4; // Number of items visible at once
+    const itemsPerPage = 8; // Number of items visible at once
     const endIndex = startIndex + itemsPerPage;
 
     const handlePrevClick = () => {
@@ -44,8 +44,8 @@ const NewArrivals = () => {
                 {/* Header Section */}
                 <div className="flex justify-between items-center">
                     <div>
-                        <h2 className="text-lg font-semibold text-purple-600 uppercase">Featured Product</h2>
-                        <h3 className="text-3xl font-bold mb-6">New Arrivals</h3>
+                        <h2 className="text-lg font-semibold text-purple-600 uppercase">Summer</h2>
+                        <h3 className="text-3xl font-bold mb-6">Big Deals</h3>
                     </div>
                     <div className="flex gap-3">
                         <button
@@ -74,12 +74,16 @@ const NewArrivals = () => {
                                 height={400}
                                 width={400}
                             />
+                            <div className="flex justify-stat items-center text-yellow-400 mb-2">
+                                <span className="mr-1">⭐⭐⭐⭐☆</span>
+                                <span className="text-gray-500 text-sm">(50)</span>
+                            </div>
                             <div className="flex justify-between">
                                 <h4 className="text-lg font-semibold">{product.name}</h4>
                                 <p className="text-gray-700">{product.price}</p>
                             </div>
                             <button className="mt-4 w-full py-2 text-purple-600 border border-purple-600 rounded-lg hover:bg-purple-600 hover:text-white transition">
-                                Add to Cart
+                                    Add to Cart
                             </button>
                         </Link>
                     ))}
@@ -96,4 +100,4 @@ const NewArrivals = () => {
     );
 };
 
-export default NewArrivals;
+export default Summer;

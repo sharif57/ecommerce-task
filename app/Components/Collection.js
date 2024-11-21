@@ -25,12 +25,12 @@ const Collection = () => {
                     {/* Left Section - Image */}
                     <div className="flex-1 flex justify-center">
                         <Image
-                            src="/man.jpg"
+                            src="/man2.jpg"
                             alt="Men Collection"
                             className="w-full max-w-md md:max-w-lg"
-                            width={400} // Set explicit width if possible
-                            height={300} // Set explicit height if possible
-                            priority // Optional for optimization (e.g., above-the-fold content)
+                            width={400}
+                            height={300}
+                            priority
                         />
                     </div>
 
@@ -51,12 +51,12 @@ const Collection = () => {
                     {/* Left Section - Image */}
                     <div className="flex-1 flex justify-center">
                         <Image
-                            src="/man2.jpg"
+                            src="/man.jpg"
                             alt="Men Collection"
                             className="w-full max-w-md md:max-w-lg"
-                            width={400} // Set explicit width if possible
-                            height={300} // Set explicit height if possible
-                            priority // Optional for optimization (e.g., above-the-fold content)
+                            width={400}
+                            height={300}
+                            priority
                         />
                     </div>
 
@@ -72,7 +72,9 @@ const Collection = () => {
                     </div>
                 </div>
             </SwiperSlide>
-      
-        </Swiper>  </div>;
+
+
+        </Swiper>
+    </div>;
 };
 export default Collection;
