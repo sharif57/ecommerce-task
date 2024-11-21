@@ -7,10 +7,10 @@ const Banner = () => {
             <div className="relative bg-black">
                 <div className="relative w-full h-screen">
                     <Image
-                        src="/banner.jpg" // Replace with the actual image URL
+                        src="/banner2.jpg" 
                         alt="Hero Background"
-                        layout="fill" // Automatically fills the parent container
-                        objectFit="cover" // Ensures the image covers the container
+                        layout="fill" 
+                        objectFit="cover" 
                         className="opacity-70"
                     />
                 </div>

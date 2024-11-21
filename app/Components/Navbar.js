@@ -2,6 +2,8 @@
 import { IoSearch } from "react-icons/io5";
 import { FaCartArrowDown } from "react-icons/fa";
 import { FcManager } from "react-icons/fc";
+import Image from "next/image";
+import Link from "next/link";
 
 
 
@@ -85,7 +87,7 @@ import { FcManager } from "react-icons/fc";
 
 const Navbar = () => {
     return <div className="container mx-auto">
-        <div className="navbar bg-white">
+        <div className="navbar ">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -111,9 +113,14 @@ const Navbar = () => {
                         <li><a>What's new</a></li>
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl inline-flex flex items-center">
-                    We<span className="text-blue-500">5</span>ive
-                </a>
+                <Link href={'/'} className="btn btn-ghost text-xl inline-flex  items-center">
+                    <Image
+                        src={'/logo1.png'}
+                        alt=''
+                        // className=" h-56  mb-4"
+                        height={300}
+                        width={200}
+                    />                </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -141,7 +148,7 @@ const Navbar = () => {
                     <FaCartArrowDown className="text-gray-700 size-8" />
 
                     {/* Badge / Counter */}
-                    <p className="absolute top-0 right-0  text-white text-xs font-bold rounded-full h-5 w-5 bg-red-300 flex items-center justify-center">
+                    <p className="absolute top-0 right-0  text-black text-xs font-bold rounded-full h-5 w-5 bg-red-300 flex items-center justify-center">
                         10
                     </p>
                 </div>
